@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Services | CE Interiors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="CE INTERIORS Logo">
+      </a>
+    </div>
+    <button id="mode-toggle">🌙</button>
+    <nav class="nav">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- SERVICES HERO -->
+<section class="services-hero">
+  <div class="services-hero-bg"></div>
+  <div class="services-hero-overlay"></div>
+
+  <div class="services-hero-text">
+    <h2>Our Services</h2>
+    <p>Explore the full range of interior design and finishing solutions we offer.</p>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-container">
+
+    <h2 style="color: #bfa15b; margin-bottom: 20px;">What We Offer</h2>
+
+    <div class="service-item">
+      <h3>Curtains, Nets & Blinds</h3>
+      <p>We supply and install premium curtains, nets, and blinds tailored to your space. Our team ensures perfect measurements, elegant styling, and professional installation for a flawless finish.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Mosquito Nets Installation</h3>
+      <p>We provide high‑quality mosquito nets with ceiling or wall installation options. Our nets are durable, neatly fitted, and designed to blend seamlessly with your interior.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Carpets, Doormats & Artificial Grass</h3>
+      <p>Choose from a wide range of carpets, doormats, and artificial grass in various colors and textures. We offer supply, delivery, and professional installation for both homes and commercial spaces.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Cleaning, Fumigation & Curtain Laundry</h3>
+      <p>We offer deep cleaning, fumigation, and specialized curtain laundry services to keep your home fresh, hygienic, and beautifully maintained.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Painting & Finishes</h3>
+      <p>Our painting services include interior and exterior finishes, texture applications, and color consultations to bring your vision to life with precision and style.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Gypsum Ceiling Construction</h3>
+      <p>We design and install modern gypsum ceilings that enhance lighting, acoustics, and overall interior appeal. Custom designs are available for homes, offices, and commercial spaces.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Furniture Upholstery</h3>
+      <p>Give your furniture a fresh, luxurious look with our professional upholstery services. We work with high‑quality fabrics and expert craftsmanship.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Office & Hospital Partitioning</h3>
+      <p>We install durable and functional partitions for offices, clinics, and hospitals, ensuring privacy, organization, and efficient space usage.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Welding & Aluminium Works</h3>
+      <p>Our team handles custom welding and aluminium fabrication for doors, windows, frames, and structural enhancements.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Tiling & Wooden Floors</h3>
+      <p>We supply and install tiles and wooden flooring with precision, ensuring durability, beauty, and long‑lasting performance.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Kitchen Cabinets, Wardrobes & Dressers</h3>
+      <p>We design and build custom cabinetry that maximizes storage while elevating the style of your kitchen, bedroom, or workspace.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>Consultations & Site Visits</h3>
+      <p>Our experts offer on‑site assessments and personalized consultations to help you choose the best interior solutions for your space.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION (added) -->
+<section id="contact" class="about-contact">
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>
+      <strong>Phone/WhatsApp:</strong>
+      <a href="tel:+256789124385">+256 789 124 385</a> |
+      <a href="https://wa.me/256789124385" target="_blank">WhatsApp</a> &nbsp;|&nbsp;
+      <a href="tel:+256758823455">+256 758 823 455</a> |
+      <a href="https://wa.me/256758823455" target="_blank">WhatsApp</a>
+    </p>
+    <p>
+      <strong>Location:</strong>
+      <a href="https://www.google.com/maps/search/?api=1&query=Ham+Shopping+Grounds+Block+F+Room+F122" target="_blank">
+        Ham Shopping Grounds, Block F, Room F122
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2026 CE INTERIORS. All rights reserved.</p>
+  <div class="social-links">
+    <a href="#" target="_blank">Facebook</a> |
+    <a href="#" target="_blank">Instagram</a> |
+    <a href="#" target="_blank">TikTok</a>
+  </div>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('mode-toggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      toggleBtn.textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleBtn.textContent = '☀️';
+    }
+  });
+</script>
+
+
+</body>
+</html>
+
