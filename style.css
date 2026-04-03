@@ -531,7 +531,7 @@ body.dark-mode .services-hero-bg {
 
 body.dark-mode .services-hero-text {
   color: #fdfaf6;
-}
+
 
 body.dark-mode .mv-intro p,
 body.dark-mode .mv-box p,
@@ -539,15 +539,12 @@ body.dark-mode .core-values li,
 body.dark-mode .contact p {
   color: #ccc;
 }
-
 body.dark-mode .about-contact {
   background: #121212;
 }
-
 body.dark-mode .gallery-section {
   background: #121212;
 }
-
 /* ==============================
    RESPONSIVE
 ================================ */
@@ -556,33 +553,26 @@ body.dark-mode .gallery-section {
     font-size: 36px;
     letter-spacing: 2px;
   }
-
   .hero-tagline {
     font-size: 16px;
   }
-
   .services-hero-text {
     padding: 20px;
     font-size: 16px;
   }
-
   .nav a {
     font-size: 15px;
     margin-left: 15px;
   }
-
   .mv-grid {
     flex-direction: column;
   }
-
   .about-stats-outline {
     gap: 30px;
   }
-
   .gallery-heading img {
     width: 90vw;
   }
-
   .lightbox .prev { left: 10px; }
   .lightbox .next { right: 10px; }
 }
@@ -596,7 +586,6 @@ body.dark-mode .gallery-section {
   backdrop-filter: blur(3px);
   transition: transform 0.3s ease, background 0.3s ease;
 }
-
 .service-item h3 {
   margin-bottom: 10px;
   font-size: 22px;
@@ -628,5 +617,4 @@ body.dark-mode .gallery-section {
     opacity: 1;
     transform: translateY(0);
   }
-}
 
