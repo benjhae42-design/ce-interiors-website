@@ -154,6 +154,35 @@ a {
   display: flex;
   gap: 15px;
 }
+.hero-text-blocks {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero-left, .hero-right {
+  flex: 1;
+  color: #fff;
+}
+
+.hero-left h1, .hero-right h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #f0c97b; /* gold accent */
+}
+
+.hero-left p, .hero-right p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .hero-text-blocks {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 /* ==============================
    BUTTONS
